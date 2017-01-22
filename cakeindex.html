@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Love Dessert</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style:none;
+			
+
+		}
+		body{
+
+			overflow-x:hidden;
+			font-family: 微軟正黑體;
+
+		}
+
+		.header{
+			/*display: none;*/
+			height:12% ;
+			
+			position:fixed ;
+			top:0 ;
+			z-index:5;
+			background: url(images/banner_01.png) no-repeat 20% 100%;
+			
+		
+					
+		}
+		.header img{
+			display: block;
+			width: 100%;
+		}
+		.title{
+			position: absolute;
+			font-size:4em;
+			top:5%;
+			left:5%; 
+		}
+		.title a {
+			text-decoration: none;
+			color: #fff;
+		}
+		.box{
+
+			background-size: cover;
+			background-attachment: fixed;
+			height: 980px; 
+
+		}
+		.menu{
+			margin-top: 2%;
+		}
+		.menu ul li{
+			float: left;
+			text-decoration: none;
+			margin-left: 2%;
+			font-size: 1.5em;
+			
+		}
+		.menu ul li a{
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+			color: #fff;
+			text-align: left;
+			font-size:1.5em;
+			margin:2%;			
+		}
+
+		
+		.menu a:hover{
+			color:#551A8B; 
+
+		}
+		
+		.box2{
+			background-image:url(images/table.jpg) ; 
+		}
+
+
+		.box2-1{
+			margin-top: 12vw;
+			margin-left: 5vw;
+        	overflow: hidden;
+        	position: relative;
+
+   		}
+
+
+    	.box2-1 img{
+        	display: none;
+
+        	width:100%;
+        	height:100%;
+
+
+    	}
+		.b2p{
+			font-size: 2vw;
+			display: inline-block;
+			line-height: 300%;
+			color: #fff;
+			margin-top: 15%;
+		}
+		.box3{
+			background-color: #f8cdd4;
+		}
+		.ti{
+			text-align: center;
+			font-size:5vw;
+			color: #fff;
+		}
+
+		.productsmenu{
+			display: inline-block;
+			background-color:rgba(255,255,255,.5);
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+			transform: scale(1);
+			margin-top: 20vh;
+
+		}
+		.productsmenu:hover{
+			background-color: #FE718B;
+		}
+		.productsmenu img{
+			transform: scale(1);
+			transition: 1s;
+			border-radius: 50%;
+			
+		}
+		.productsmenu img:hover {
+			transform: scale(1.1);
+			border-radius: 50%;
+			
+		}
+		.productsmenu img{
+			border-radius: 50%;
+		}
+		
+		
+		.box4{
+
+			background-color: #fff; 
+			background-image: url(images/n5.jpg) ; 
+		}
+		.box5{
+			background-color: #E96D8F; 
+
+		}		
+		.i1,.i2,.i3{
+			/*float: left;*/
+			font-size: 1vw;
+			font-family: 微軟正黑體; 
+		}
+		
+		.goTop{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			border:1px solid #f8cdd4;
+			color: #f8cdd4;
+			line-height: 40px;
+			display: none;
+		}
+
+
+
+		@media screen and (max-width: 767px) {
+        	.productsmenu{
+        		margin-top: 1vw;
+        	}
+			.box2,.box5{
+				height: 100%;
+			}
+			.box2-1{
+				margin-top: 30%;
+				margin-left: 0;
+			}
+			.box4{
+				display: none;
+			}
+			.menu{
+				display:none; 
+
+			}
+			.title{
+				font-size: 9vw;
+
+			}
+			.c2p{
+				font-size: 7vw;
+				text-align: center;
+				line-height:10vh;
+			
+			}
+			.ti{
+				font-size: 10vw;
+				margin-left: -2vw;
+			}
+    	}
+	</style>
+	</head>
+	<body>
+		
+<div class="wrap">
+	<div class="col-sm-12 col-xs-12 header" style="padding: 0">
+	<!-- <img src="images/banner_01.png"> -->
+		<div class="col-sm-4 title"><a href="index.html">樂點心</a></div>
+			<div class="col-sm-4 col-sm-offset-7  menu">
+				<ul >
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="cakeindex.html#box2">ABOUT</a></li>
+					<li><a href="cakeindex.html#box3">PRODUCTS</a></li>
+					<li><a href="cakeindex.html#box5">CONTACT</a></li>
+				</ul>
+			</div>
+	</div>
+
+	<div class="col-sm-12 col-xs-12 box box2" id="box2">
+		<div class="col-sm-5 col-xs-12 box2-1" style="padding: 0">
+            <img src="images/s1.jpg">
+			<img src="images/s2.jpg">
+			<img src="images/s3.jpg">
+			<img src="images/s4.jpg">
+        </div>
+        <div class="col-sm-5 col-xs-12 col-sm-offset-1 b2p">
+		
+			<p class="c2p">
+			快樂做點心過生活<br>
+	    	給家人吃的心情，<br>
+	    	製作快樂的點心~
+	    	</p>
+    	</div>
+	</div>
+	<div class="col-sm-12 col-xs-12 box box3" id="box3">
+		<div class="col-sm-12 col-xs-12 ti">Our products</div>
+
+			<a href="cake.html">
+			<div class="col-sm-2 col-sm-offset-2  productsmenu pc">
+			<img src="images/ck1.jpg" width="300" height="300">
+			</div>
+			</a>
+			<a href="cookies.html">
+			<div class="col-sm-2 col-sm-offset-1  productsmenu pk">
+			<img src="images/k.jpg" width="300" height="300">
+			</div>
+			</a>
+			<a href="bread.html">
+			<div class="col-sm-2 col-sm-offset-1  productsmenu pb">
+			<img src="images/b.jpg" width="300" height="300">
+			</div>
+			</a>
+			<div class="col-sm-12 col-xs-12 "></div>
+
+	</div>
+	<div class="col-sm-12 col-xs-12 box box4" id="box4"></div>
+	<div class="col-sm-12 col-xs-12 box box5" id="box5" style="padding: 0">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.966702879889!2d121.51685220586359!3d25.10959114004537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae923c0f8367%3A0xafc614d2c4d15714!2z5o236YGL5piO5b6356uZ!5e0!3m2!1szh-TW!2stw!4v1477409135785" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div>
+			<div class="col-sm-12 i1"><a href="https://www.facebook.com/happy.cooking.time"><i class="fa fa-facebook-official"> 樂點心</i></a></div>
+			<div class="col-sm-12 i2"><a href="mailto:fen2801@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"> 寫信給我</i></a></div>
+			<div class="col-sm-12 i3"><i class="fa fa-map-marker" aria-hidden="true"> 台北市北投區文林北路244巷口</i></div>
+			<div class="col-sm-12">Love Dessert © 2016 •</div>
+		</div>
+		<a href="#" class="goTop"> 
+		<i class="fa fa-arrow-up"></i>
+		</a>
+	</div>
+		
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+        $('.box2-1').each(function(){
+
+
+
+            var $slides=$(this).find('img'),
+                slideCount=$slides.length,
+                currentIndex=0;
+
+            $slides.eq(currentIndex).show();
+
+
+            setInterval(showNextSlide,3000);
+
+
+
+            function showNextSlide(){
+
+                var nextIndex=(currentIndex+1)%slideCount;
+
+                $slides.eq(currentIndex).hide();
+                $slides.eq(nextIndex).show();
+                currentIndex=nextIndex;
+
+
+
+            }
+
+
+
+        });
+
+        	var _body21 = $('body').height() / 2;
+			var $window = $(window);
+			var $goTop = $('.goTop');
+
+			$window.scroll(function(){
+
+				if( $window.scrollTop() > _body21 ){
+					$goTop.fadeIn();
+				}else{
+					$goTop.fadeOut();
+				}
+
+			})
+
+			$goTop.click(function(){
+				$('html,body').animate({scrollTop:0},1000);
+			})
+
+
+
+
+
+    });
+</script>
+
+		
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
